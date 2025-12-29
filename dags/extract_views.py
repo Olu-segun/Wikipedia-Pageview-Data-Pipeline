@@ -10,7 +10,7 @@ FILENAME = 'projectviews-20251226-090000.gz'
 def extract_company_views():
         try:
             url = os.getenv("wikipedia_page_view_url")
-            response = requests.get(url)
+            response = requests.get(url, timeout=60)
             
             if response.status_code != 200:
                 raise Exception(f"Bad status code: {response.status_code}")
@@ -28,5 +28,5 @@ def extract_company_views():
             return df
             
         except Exception as e:
-            print(f"Error extracting wikipedia page reviews: {e}")
-
+            raise RuntimeError(f"Error extracting wikipedia page views: {e}")
+           
