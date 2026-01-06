@@ -2,6 +2,7 @@
 
 This project implements an Apache Airflow–orchestrated ETL pipeline to automate the extraction, transformation, and loading of Wikipedia pageview data.
 The pipeline tracks hourly pageview activity for selected global technology companies — Apple, Amazon, Facebook, Google, Microsoft, Tesla, IBM, and Oracle — and stores the processed results in a PostgreSQL database for analysis.
+
 The goal of this project is to demonstrate end-to-end data pipeline development, including data ingestion from external sources, transformation logic, database loading, and analytical querying.
 
 ---
