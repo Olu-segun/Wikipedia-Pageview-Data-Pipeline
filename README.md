@@ -10,45 +10,45 @@ The goal of this project is to demonstrate end-to-end data pipeline development,
 
 ## 🛠️ Tech Stack
 
-    -	Orchestration: Apache Airflow
+-	Orchestration: Apache Airflow
 
-    -	Programming Language: Python 3.11
+-	Programming Language: Python 3.11
 
-    -	Database: PostgreSQL
+-	Database: PostgreSQL
 
-    -	Data Processing: Pandas
+-	Data Processing: Pandas
 
-    -	Infrastructure: Docker & Docker Compose
+-   Infrastructure: Docker & Docker Compose
 
-    -	Data Source: Wikimedia Pageviews Dumps
+-	Data Source: Wikimedia Pageviews Dumps
 ---
  ## Project Workflow
  
-    1.	Extract
+1.	Extract
 
-        -   Downloads hourly Wikipedia pageview data (compressed .gz format) for a specified hour in December 2025.
+    -   Downloads hourly Wikipedia pageview data (compressed .gz format) for a specified hour in December 2025.
 
-        -   Stores the raw file locally for processing.
+    -   Stores the raw file locally for processing.
 
-    2. Transform
+2. Transform
 
-        -   Decompresses and parses the dataset.
+    -   Decompresses and parses the dataset.
 
-        -   Filters records to include only predefined companies of interest.
+    -   Filters records to include only predefined companies of interest.
 
-        -  Aggregates total pageviews per company.
+    -  Aggregates total pageviews per company.
 
-    3. Load
+3. Load
 
-        -   Inserts the transformed dataset into a PostgreSQL table.
+    -   Inserts the transformed dataset into a PostgreSQL table.
 
-        -   Ensures the target table exists before loading.
+    -   Ensures the target table exists before loading.
 
-    4. Analyze
+4. Analyze
 
-        -  Runs SQL queries to identify engagement trends.
+    -  Runs SQL queries to identify engagement trends.
 
-        -  Determines the company with the highest pageview count for the selected time window
+    -  Determines the company with the highest pageview count for the selected time window
 ---
 ### 📁 Repository Structure
 <pre>
@@ -83,18 +83,18 @@ The following screenshots demonstrate successful pipeline execution and data val
 ---
 ## 🚀 Key Highlights
 
-    -   End-to-end ETL pipeline using Apache Airflow
+-   End-to-end ETL pipeline using Apache Airflow
 
-    -   Real-world external data ingestion (Wikimedia dumps)
+-   Real-world external data ingestion (Wikimedia dumps)
 
-    -   Modular, reusable Python code structure
+-   Modular, reusable Python code structure
 
-    -   PostgreSQL-based analytical storage
+-   PostgreSQL-based analytical storage
 
-    -   Dockerized environment for easy setup and reproducibility
+-   Dockerized environment for easy setup and reproducibility
 ---
 ## 🎯 Use Cases
 
-    -   Monitoring public interest trends for major technology companies
+-   Monitoring public interest trends for major technology companies
 
-    -   Demonstrating data engineering and analytics engineering skills
+-   Demonstrating data engineering and analytics engineering skills
