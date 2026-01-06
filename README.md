@@ -48,7 +48,7 @@ The goal of this project is to demonstrate end-to-end data pipeline development,
 
     •  Runs SQL queries to identify engagement trends.
 
-    •  Determines the company with the highest pageview count for the selected time window
+    •  Determines the company with the highest pageview count for the selected time window.
 ---
 ### 📁 Repository Structure
 <pre>
