@@ -2,8 +2,7 @@ __pycache__/
 *.pyc
 .env
 pyenv
-view_data/*.csv
-view_data/*.gz
+view_data/
 plugins/
-config/
-logs/
+logs/*
+config/*.yaml
