@@ -4,3 +4,6 @@ __pycache__/
 pyenv
 view_data/*.csv
 view_data/*.gz
+plugins/
+config/
+logs/
