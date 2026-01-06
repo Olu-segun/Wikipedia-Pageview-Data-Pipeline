@@ -22,7 +22,7 @@ The goal of this project is to demonstrate end-to-end data pipeline development,
 
 -	Data Source: Wikimedia Pageviews Dumps
 ---
- ## Project Workflow
+ ## 🔄 Project Workflow
  
 1.	Extract
 
