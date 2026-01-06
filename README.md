@@ -1,6 +1,6 @@
 ## Project Description
 
-This project implements an Apache Airflow DAG to automate the extraction and analysis of Wikipedia pageview data. Specifically, it tracks hourly pageview trends for the "Big Five" tech companies: Amazon, Apple, Facebook, Google, and Microsoft.
+This project implements an Apache Airflow DAG to automate the extraction and analysis of Wikipedia pageview data. Specifically, it tracks hourly pageview trends for some big tech companies: Apple, Amazon, Facebook, Google, Microsoft, Tesla, IBM, Oracle.
 
 ---
 ## Tech Stack
@@ -16,7 +16,7 @@ This project implements an Apache Airflow DAG to automate the extraction and ana
  
 1.	Extract: Download and unzip Wikipedia pageview data for a specific hour in December 2025.
 
-2.	Transform: Filter the dataset to isolate the five targeted companies and extract pageview counts.
+2.	Transform: Filter the dataset to isolate the targeted companies and extract pageview counts.
 
 3.	Load: Insert the processed data into a PostgreSQL database.
 
@@ -34,8 +34,7 @@ Wikipedia-Pageview-Data-Pipeline/
 │   │   └──                           
 ├── pyenv/
 ├── logs
-├── config
-├── docker-compose.yaml                                    # virtual environment
+├── docker-compose.yaml                                    
 ├── requirements.txt
 └── README.md
 </pre>
