@@ -83,6 +83,7 @@ The following screenshots demonstrate successful pipeline execution and data val
 <p align= "center" > 
     <img src="images/query_run_2.jpeg" width="800">
 </p>
+
 ---
 ## 🚀 Key Highlights
 
