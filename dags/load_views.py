@@ -3,18 +3,18 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 def load_company_views(filepath: str):
     try:
-        # Read the summary CSV produced by transform step
+       
         df = pd.read_csv(filepath)
 
-        # Convert DataFrame rows into list of tuples
+        
         records = list(df.itertuples(index=False, name=None))
 
-        # Get Postgres connection from Airflow
+        
         postgres_hook = PostgresHook(postgres_conn_id="wikipedia_page_view")
         conn = postgres_hook.get_conn()
         cur = conn.cursor()
 
-        # Create table if not exists
+        
         cur.execute("""
             CREATE TABLE IF NOT EXISTS wikipedia (
                 id SERIAL PRIMARY KEY,
@@ -23,7 +23,7 @@ def load_company_views(filepath: str):
             )
         """)
 
-            # Clear old data to avoid duplicates 
+        """Clear old data to avoid duplicates"""
         cur.execute("TRUNCATE TABLE wikipedia RESTART IDENTITY;");
 
         

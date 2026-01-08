@@ -22,7 +22,7 @@ def extract_company_views():
         os.makedirs(os.path.dirname(LOCAL_GZ), exist_ok=True)
         os.makedirs(os.path.dirname(FILENAME), exist_ok=True)
 
-        # Download dump file
+       
         print(f"Downloading dump file from {url}...")
         with requests.get(url, stream=True, timeout=300) as r:
             r.raise_for_status()
@@ -31,7 +31,7 @@ def extract_company_views():
                     f.write(chunk)
         print("Download complete.")
 
-        # Parse gzip and filter
+       
         filtered_data = []
         with gzip.open(LOCAL_GZ, "rt", encoding="utf-8") as f:
             for line in f:

@@ -9,7 +9,8 @@ def transform_company_views(filepath):
         if "page_title" not in df.columns or "views" not in df.columns:
             raise ValueError("CSV missing required columns")
 
-        # Aggregate views per company
+        """ Aggregate views per company """
+        
         summary = df.groupby("page_title")["views"].sum().reset_index()
         out_path = "/opt/airflow/view_data/summary-20251226-090000.csv"
         summary.to_csv(out_path, index=False)
