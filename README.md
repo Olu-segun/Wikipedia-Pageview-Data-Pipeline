@@ -77,9 +77,12 @@ The following screenshots demonstrate successful pipeline execution and data val
 
 ### PostgreSQL Query Results:
 <p align= "center" > 
-    <img src="images/query_run.jpeg" width="800"> 
+    <img src="images/query_run_1.jpeg" width="800">
 </p>
         
+<p align= "center" > 
+    <img src="images/query_run_2.jpeg" width="800">
+</p>
 ---
 ## 🚀 Key Highlights
 

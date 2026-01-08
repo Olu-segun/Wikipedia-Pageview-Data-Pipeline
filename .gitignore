@@ -6,7 +6,6 @@ __pycache__/
 
 # Environment and virtualenvs
 .env
-venv/
 pyenv/
 
 # Airflow-specific artifacts
