@@ -1,11 +1,7 @@
 __pycache__/
 .env
 pyenv/
-# airflow.db
-# unittests.cfg
 logs/
 *.log
 view_data/
-# config/*.local.*
-# config/*.secret.*
 
