@@ -1,8 +1,29 @@
+# Python cache and compiled files
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Environment and virtualenvs
 .env
-pyenv
-view_data/
-plugins/
+venv/
+pyenv/
+
+# Airflow-specific artifacts
+airflow.db
+unittests.cfg
+
+# Logs and temp files
 logs/
-config/
+*.log
+
+# Data outputs (raw and transformed)
+view_data/
+
+# Ignore local-only configs, but keep templates
+config/*.local.*
+config/*.secret.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
